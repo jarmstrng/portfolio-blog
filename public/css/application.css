@@ -78,6 +78,12 @@ p {
 
 }
 
+.comment {
+	margin: 8px 0px;
+  padding: 0px 12px;
+  border: 1px dotted #9A9C9F;
+}
+
 textarea {
 	margin-bottom: 16px;
   outline: none;
