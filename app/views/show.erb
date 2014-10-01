@@ -16,13 +16,14 @@
 
   <div class="form-comment">
 	  <% if session[:current_user] %>
-	  	<h4>Join the conversation:</h4>
-	  	<form class="new" data-post-id = <%= @article.id %> action="/comment/new/<%= @article.id %>" method="post">
-		  	<textarea name="content" cols="30" rows="5">
-		  	</textarea>
-		  	<input type="submit" value="Submit">
-		  </form>
+	  	<%= erb :"partials/_new_comment" %>
+		<% else %>
+		 	<p>Please log in to comment.</p>
 	  <% end %>
   <div>
+
+  <div class="janky-form">
+  	<%= erb :"partials/_new_comment" %>
+  </div>
 
 </div>

@@ -107,7 +107,7 @@ p {
 .comment {
 	margin: 8px 0px;
   padding: 0px 12px;
-  border: 1px dotted #0F0F0D;
+  border-bottom: 1px dotted #0F0F0D;
 }
 
 textarea {
@@ -119,6 +119,10 @@ textarea {
 	border: 3px solid #9A9C9F;
 	padding: 5px;
 	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.janky-form {
+	display: none;
 }
 
 /* 
