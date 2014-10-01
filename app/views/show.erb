@@ -14,9 +14,11 @@
   <div class="form-comment">
 	  <% if session[:current_user] %>
 	  	<h4>Join the conversation:</h4>
-	  	<textarea  cols="30" rows="5">
-	  	</textarea>
-	  	<a href="/comment/new" class="btn" id="new-comment">Submit</a>
+	  	<form id="new-comment" action="/comment/new/<%= @article.id %>" method="post">
+		  	<textarea name="content" cols="30" rows="5">
+		  	</textarea>
+		  	<input type="submit" value="Submit">
+		  </form>
 	  <% end %>
   <div>
 
