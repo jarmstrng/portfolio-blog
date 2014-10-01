@@ -8,7 +8,11 @@ post '/comment/new/:id' do
 	@article = Article.find_by(id: params[:id])
 	@comment = Comment.create(user_id: session[:current_user], content: params[:content], article: @article)
 
-	redirect "/article/#{@article.id}"
+	if request.xhr?
+		erb :"partials/_comment", locals: {comment:@comment}, :layout => false
+	else
+		redirect "/article/#{@article.id}" 
+	end
 end
 
 get '/article/:id' do
