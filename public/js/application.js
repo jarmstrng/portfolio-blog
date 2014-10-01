@@ -10,6 +10,18 @@ $(document).ready(function() {
 			})
 		});	
 
+	$("form.login-form").submit(function(event) {
+		event.preventDefault();
+		$.ajax({
+			url: "/login",
+			type: "POST",
+			data: $(this).serialize()
+			}).done(function(response) {
+				$(".login").toggle();
+				
+			})
+		});	
+
 	$("form.new").submit(function(event) {
 			event.preventDefault();
 			var route = "/comment/new/" + $("form.new").data("post-id");
