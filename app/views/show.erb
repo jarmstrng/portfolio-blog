@@ -1,0 +1,23 @@
+<div class="article">
+
+  <h2><%= @article.title %></h2>
+  <p><%= @article.content %><p>
+
+  <h3>Comments</h3>
+
+  <div class="comment">
+	  <% @comments.each do |comment| %>
+	  	<p><%= comment.content %></p>
+	  <% end %>
+  </div>
+
+  <div class="form-comment">
+	  <% if session[:current_user] %>
+	  	<h4>Join the conversation:</h4>
+	  	<textarea  cols="30" rows="5">
+	  	</textarea>
+	  	<a href="/comment/new" class="btn" id="new-comment">Submit</a>
+	  <% end %>
+  <div>
+
+</div>
