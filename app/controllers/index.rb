@@ -33,7 +33,11 @@ post '/login' do
 
 	if @user.password == params[:password]
 		session[:current_user] = @user.id
-		redirect to "/" unless request.xhr?
+		if request.xhr?
+			erb :'partials/_logout_btn', :layout => false
+		else
+			redirect to "/" unless request.xhr?
+		end
 	else
 			session[:login_error] = "Invalid email/password"
 			redirect to "/"

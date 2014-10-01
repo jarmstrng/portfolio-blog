@@ -5,9 +5,9 @@
 
 	<div class="nav">
 		<% if session[:current_user] %>
-			<a href="/logout" class="btn" id="logout">Log Out</a>
+			<%= erb :"/partials/_logout_btn" %>
 		<% else %>
-			<a href="/login" class="btn-login" id="login">Log In</a>
+			<%= erb :"/partials/_login_btn" %>
 		<% end %>
 	</div>
 
