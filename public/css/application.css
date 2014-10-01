@@ -1,0 +1,58 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+th {
+  text-align: left;
+}
+
+
+h1, h2, h3, h4 {	
+	font-family: 'Stint Ultra Expanded'; /*, cursive*/
+	font-weight: 400;
+}
+
+
+
+p {
+	/*font-family: Helvetica, sans-serif;*/
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-weight: 200;
+	/*color: black;*/
+}
+
+
+/* 
+pale 
+FEFEE7
+HEX
+254,254,231
+
+light green
+A4D0C4
+HEX
+164,208,196
+
+darker
+72C4B9
+HEX
+114,196,185
+RGB
+
+gray
+9A9C9F
+HEX
+154,156,159
+RGB
+
+black
+0F0F0D
+HEX
+15,15,13
+
+
+*/
