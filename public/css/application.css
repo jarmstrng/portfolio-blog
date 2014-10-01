@@ -42,6 +42,13 @@ a {
 	padding: 4%;
 }
 
+.btn-login {
+	display: inline;
+	background-color: #A4D0C4;
+	padding: 8px;
+	border-radius: 4px;
+}
+
 .btn {
 	display: inline;
 	background-color: #A4D0C4;
