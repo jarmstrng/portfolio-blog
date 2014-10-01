@@ -1,7 +1,7 @@
 body {
 	margin: 0px auto;
 	padding: 0px;
-	background-color: #FEFEE7;
+	background-color: #A4D0C4;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
   margin: 18% auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted #9A9C9F;
+  border: 1px dotted #0F0F0D;
 }
 
 .header {
@@ -22,6 +22,7 @@ a {
 	width: 100%;
 	position: fixed;
 	height: 120px;
+	font-weight: 900;
 }
 
 .logo {
@@ -29,35 +30,40 @@ a {
 }
 
 .logo h1 {
-	font-size: 2.5em;
+	font-size: 3em;
 	padding: 4%;
 }
 
 .logo a {
-	color: #9A9C9F;
+	color: #FEFEE7;
+	margin-left: 12%;
 }
 
 .nav {
 	float: right;
 	padding: 4%;
+	font-family: 'Stint Ultra Expanded';
+	font-weight: 600;
 }
 
 .btn-login {
+	color: #FEFEE7;
 	display: inline;
-	background-color: #A4D0C4;
-	padding: 8px;
-	border-radius: 4px;
+	background-color: #0F0F0D;
+	padding: 12px 16px;
+	border: 3px solid #FEFEE7;
+	border-radius: 8px;
 }
 
 .btn {
 	display: inline;
-	background-color: #A4D0C4;
+	background-color: #FEFEE7;
 	padding: 8px;
 	border-radius: 4px;
 }
 
 .login {
-	background-color: #A4D0C4;
+	background-color: #FEFEE7;
 	padding: 8px;
 	text-align: center;
 	display: none;
@@ -67,13 +73,14 @@ a {
 }
 
 .login-page {
-	background-color: #A4D0C4;
+	background-color: #FEFEE7;
 	padding: 8px;
-	text-align: center;
+	text-align: left;
 }
 
 h1, h2, h3, h4 {	
 	font-family: 'Stint Ultra Expanded';
+	font-weight: 600;
 }
 
 p {
@@ -88,7 +95,7 @@ p {
 .comment {
 	margin: 8px 0px;
   padding: 0px 12px;
-  border: 1px dotted #9A9C9F;
+  border: 1px dotted #0F0F0D;
 }
 
 textarea {
@@ -97,7 +104,7 @@ textarea {
   overflow: auto;
   width: 580px;
 	height: 120px;
-	border: 3px solid #A4D0C4;
+	border: 3px solid #9A9C9F;
 	padding: 5px;
 	font-family: 'Source Sans Pro', sans-serif;
 }
