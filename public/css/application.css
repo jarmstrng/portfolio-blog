@@ -16,6 +16,14 @@ a {
   border: 1px dotted #0F0F0D;
 }
 
+.container a {
+	border-bottom: 1px dotted #0F0F0D;
+}
+
+.container a:hover {
+	border-bottom: 2px solid #0F0F0D;
+}
+
 .header {
 	background-color: #0F0F0D;
 	top: 0px;
@@ -23,6 +31,10 @@ a {
 	position: fixed;
 	height: 120px;
 	font-weight: 900;
+}
+
+.header a {
+	text-decoration: none;
 }
 
 .logo {
