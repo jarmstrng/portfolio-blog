@@ -63,15 +63,17 @@ a {
 	display: inline;
 	background-color: #0F0F0D;
 	padding: 12px 16px;
-	border: 3px solid #FEFEE7;
+	border: 4px solid #FEFEE7;
 	border-radius: 8px;
 }
 
 .btn {
+	color: #FEFEE7;
 	display: inline;
-	background-color: #FEFEE7;
-	padding: 8px;
-	border-radius: 4px;
+	background-color: #0F0F0D;
+	padding: 12px 16px;
+	border: 4px solid #FEFEE7;
+	border-radius: 8px;
 }
 
 .login {
