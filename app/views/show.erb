@@ -11,9 +11,9 @@
 
   <% @comments.each do |comment| %>
     <div class="comment">
-	  	<p>User name:<p>
-	  	<p><%= comment.content %></p>
-	  </div>
+      <p><%= comment.user.name %>:<p>
+      <p><%= comment.content %></p>
+    </div>
   <% end %>
 
   <div class="form-comment">
