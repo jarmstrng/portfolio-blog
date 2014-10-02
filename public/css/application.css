@@ -136,10 +136,6 @@ p {
 	font-weight: 200;
 }
 
-.article {
-
-}
-
 .comment {
 	margin: 8px 0px;
   padding: 0px 12px;
@@ -170,34 +166,3 @@ textarea {
 .janky-form {
 	display: none;
 }
-
-/* 
-pale 
-FEFEE7
-HEX
-254,254,231
-
-light green
-A4D0C4
-HEX
-164,208,196
-
-darker
-72C4B9
-HEX
-114,196,185
-RGB
-
-gray
-9A9C9F
-HEX
-154,156,159
-RGB
-
-black
-0F0F0D
-HEX
-15,15,13
-
-
-*/
