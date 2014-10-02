@@ -19,6 +19,32 @@ $(document).ready(function() {
 			}).done(function(response) {
 				$(".login").toggle();
 				$(".btn-login").hide();
+				$(".btn#signup").hide();
+				$(".nav").append(response);
+				$(".janky-form").show();
+			})
+		});	
+
+	$(".btn#signup").click(function(event) {
+		event.preventDefault();
+		$.ajax({
+			url: "/signup",
+			type: "GET"
+			}).done(function(response) {
+				$(".signup").toggle();
+			})
+		});	
+
+	$("form.signup-form").submit(function(event) {
+		event.preventDefault();
+		$.ajax({
+			url: "/signup",
+			type: "POST",
+			data: $(this).serialize()
+			}).done(function(response) {
+				$(".signup").toggle();
+				$(".btn-login").hide();
+				$(".btn#signup").hide();
 				$(".nav").append(response);
 				$(".janky-form").show();
 			})

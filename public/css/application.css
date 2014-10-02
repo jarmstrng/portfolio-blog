@@ -86,7 +86,23 @@ a {
 	border-radius: 4px;
 }
 
+.signup {
+	background-color: #FEFEE7;
+	padding: 8px;
+	text-align: center;
+	display: none;
+	position: relative;
+	float: right;
+	border-radius: 4px;
+}
+
 .login-page {
+	background-color: #FEFEE7;
+	padding: 8px;
+	text-align: left;
+}
+
+.signup-page {
 	background-color: #FEFEE7;
 	padding: 8px;
 	text-align: left;

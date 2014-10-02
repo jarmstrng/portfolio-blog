@@ -44,6 +44,21 @@ post '/login' do
 		end
 end
 
+get '/signup' do
+	erb :'partials/_signup'
+end
+
+post '/signup' do
+	@user = User.create(email: params[:email], password_digest: params[:password])
+	session[:current_user] = @user.id
+		
+	if request.xhr?
+		erb :'partials/_logout_btn', :layout => false
+	else
+		redirect to "/" unless request.xhr?
+	end
+end
+
 get '/logout' do
 	session[:current_user] = nil
 	redirect :"/"
