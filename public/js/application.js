@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
 	var loginDoneHandler = function(response) {
-			$(".btn-login").hide();
+			$(".btn#login").hide();
 			$(".btn#signup").hide();
 			$(".nav").append(response);
 			$(".janky-form").show();
 		};
 
-	$(".btn-login").click(function(event) {
+	$(".btn#login").click(function(event) {
 		event.preventDefault();
 		$.ajax({
 			url: "/login",
