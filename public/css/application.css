@@ -128,6 +128,17 @@ p {
   border-bottom: 1px dotted #0F0F0D;
 }
 
+.comments-header {
+	background-color: #0F0F0D;
+	color: #FEFEE7;
+/*	height: 50px;*/
+	padding: 1px;
+}
+
+.comments-header h3 {
+	padding-left: 4px;
+}
+
 textarea {
 	margin-bottom: 16px;
   outline: none;
