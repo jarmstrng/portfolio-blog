@@ -62,6 +62,7 @@ $(document).ready(function() {
 				data: $(this).serialize()
 				}).done(function(response) {
 					$(".form-comment").prepend(response);
+					$("input#input-field").val("");
 				})
 			});	
 
