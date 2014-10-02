@@ -7,6 +7,7 @@ $(document).ready(function() {
 			type: "GET"
 			}).done(function(response) {
 				$(".login").toggle();
+				$(".signup").hide();
 			})
 		});	
 
@@ -32,6 +33,7 @@ $(document).ready(function() {
 			type: "GET"
 			}).done(function(response) {
 				$(".signup").toggle();
+				$(".login").hide();
 			})
 		});	
 
