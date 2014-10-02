@@ -21,6 +21,11 @@ input[type=submit] {
 	font-weight: 600;
 }
 
+.new input[type=submit] {
+	border-color: #FEFEE7;
+	background-color: #FEFEE7;
+}
+
 .container {
   margin: 18% auto;
   width: 600px;
