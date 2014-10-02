@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+	var loginDoneHandler = function(response) {
+			$(".btn-login").hide();
+			$(".btn#signup").hide();
+			$(".nav").append(response);
+			$(".janky-form").show();
+		};
+
 	$(".btn-login").click(function(event) {
 		event.preventDefault();
 		$.ajax({
@@ -19,10 +26,7 @@ $(document).ready(function() {
 			data: $(this).serialize()
 			}).done(function(response) {
 				$(".login").toggle();
-				$(".btn-login").hide();
-				$(".btn#signup").hide();
-				$(".nav").append(response);
-				$(".janky-form").show();
+				loginDoneHandler(response);
 			})
 		});	
 
@@ -44,11 +48,8 @@ $(document).ready(function() {
 			type: "POST",
 			data: $(this).serialize()
 			}).done(function(response) {
-				$(".signup").toggle();
-				$(".btn-login").hide();
-				$(".btn#signup").hide();
-				$(".nav").append(response);
-				$(".janky-form").show();
+			$(".signup").toggle();
+			loginDoneHandler(response);
 			})
 		});	
 
