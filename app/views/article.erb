@@ -1,6 +1,5 @@
 <div class="article">
-
-  <h2><%= @article.title %></h2>
+  <h1><%= @article.title %></h1>
   <p><%= @article.content %><p>
 </div>
 
@@ -11,9 +10,9 @@
 
   <% @comments.each do |comment| %>
     <div class="comment">
-	  	<p>User name:<p>
-	  	<p><%= comment.content %></p>
-	  </div>
+      <p><%= comment.user.name %>:<p>
+      <p><%= comment.content %></p>
+    </div>
   <% end %>
 
   <div class="form-comment">
@@ -27,5 +26,4 @@
   <div class="janky-form">
   	<%= erb :"partials/_new_comment" %>
   </div>
-
 </div>

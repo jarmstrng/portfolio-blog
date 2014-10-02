@@ -1,4 +1,4 @@
-bob = User.create(email: "bob@dbc.com", password: "123")
+bob = User.create(name: "Bob", email: "bob@dbc.com", password: "123")
 
 article_1 = Article.create(title: "Hello World", content: "<p>This is an article on my blog! Yay articles!</p>")
 
