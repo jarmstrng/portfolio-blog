@@ -1,7 +1,13 @@
-portfolio-blog
+Ones&&Zeroes
 ==============
 
-DBC Project
+Dev Bootcamp Phase 2 Assessment Project
 
+[View app here](http://desolate-basin-6372.herokuapp.com/)
 
-http://desolate-basin-6372.herokuapp.com/ | git@heroku.com:desolate-basin-6372.git
+*** Technologies
+
+* Sinatra
+* PostgreSQL
+* ActiveRecord
+* AJAX
